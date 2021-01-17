@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stick Man</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-board">
+    <div class="track track--player">
+      <div class="player__condition player__condition--win hide">YOU WON!!!</div>
+      <div class="player__condition player__condition--lose hide">YOU LOST!!!</div>
+      <div id="player" class="character">
+        <img src="./images/phase1.png" active-phase="1" data-phase-1="./images/phase1.png" data-phase-2="./images/phase2.png" alt="">
+      </div>
+    </div>
+    <div id="goal">
+      <img src="./images/button.png" alt="">
+      <span class="goal__text">Dub</span>
+    </div>
+    <div class="track track--opponent">
+      <div id="opponent" class="character">
+        <img src="./images/phase1.png" active-phase="1" data-phase-1="./images/phase1.png" data-phase-2="./images/phase2.png" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

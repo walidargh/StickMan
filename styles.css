@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+.character {
+  max-height: 250px;
+  max-width: 200px;
+  position: absolute;
+}
+
+.character img {
+  height: auto;
+  width: auto;
+}
+
+/* .character.up img {
+  height: auto;
+  width: 100%;
+} */
+
+#player {
+  /* background: blue; */
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.hide {
+  display: none;
+}
+
+.player__condition {
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.player__condition--lose {
+  color: red;
+}
+
+.player__condition--win {
+  color: green;
+}
+
+#opponent {
+  /* background: red; */
+  right: 0;
+  transform: translateX(100%);
+}
+
+#goal {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  position: relative;
+}
+
+#goal img {
+  width: 100%;
+}
+
+.goal__text {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.track {
+  display: inline-flex;
+  width: calc(50% - 40px);
+  vertical-align: top;
+  position: relative;
+  height: 100%;
+  align-items: center;
+}
+
+.track--opponent {
+}
+
+#game-board {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: row;
+  max-width: 100vw;
+  height: 100vh;
+  padding: 100px;
+}
