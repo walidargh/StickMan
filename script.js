@@ -73,7 +73,6 @@ const handleMovement = () => {
     opponent.classList.toggle('up')
   }
 
-
   if (checkWinCondition(opponent, opponentPosiiton)) {
     document.querySelector('.player__condition--lose').classList.toggle('hide');
     return;
